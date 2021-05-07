@@ -1,0 +1,198 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00008 
+   (rule
+   )
+   )
+   (Net #00009 
+   (rule
+   )
+   )
+   (Net #00010 
+   (rule
+   )
+   )
+   (Net #00011 
+   (rule
+   )
+   )
+   (Net #00012 
+   (rule
+   )
+   )
+   (Net #00013 
+   (rule
+   )
+   )
+   (Net #00015 
+   (rule
+   )
+   )
+   (Net #00016 
+   (rule
+   )
+   )
+   (Net #00017 
+   (rule
+   )
+   )
+   (Net #00029 
+   (rule
+   )
+   (wire (path BOT 25400  1016000 -508000 1016000 -762000 889000 -762000)
+    (connect (terminal pin LCD1-1) (terminal pin FP-1))
+   )
+   (wire (path BOT 25400  889000 -762000 889000 -1016000)
+    (connect (terminal pin FP-1) (terminal pin R2-1))
+    (attr bus)
+   )
+   (wire (path BOT 25400  889000 -1016000 889000 -1270000)
+    (connect (terminal pin R2-1) (terminal pin RF-1))
+    (attr bus)
+   )
+   )
+   (Net #00030 
+   (rule
+   )
+   )
+   (Net #00031 
+   (rule
+   )
+   (wire (path TOP 25400  -1905000 -2286000 -2286000 -2286000)
+    (connect (terminal pin R1-0) (terminal pin Q4-1))
+   )
+   )
+   (Net #00033 
+   (rule
+   )
+   (wire (path BOT 25400  -1651000 -1778000 -1651000 -2159000 -2159000 -2159000)
+    (connect (terminal pin D3-0) (terminal pin Q4-0))
+   )
+   )
+   (Net #00037 
+   (rule
+   )
+   )
+   (Net #00048 
+   (rule
+   )
+   )
+   (Net #00049 
+   (rule
+   )
+   )
+   (Net #00050 
+   (rule
+   )
+   )
+   (Net G 
+   (rule
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path TOP 25400  762000 -889000 -2286000 -889000 -2286000 -1905000
+     -2413000 -1905000 -2413000 -2159000)
+    (connect (terminal wire) (terminal pin Q4-2))
+   )
+   (wire (path TOP 25400  1778000 -762000 1778000 -889000 762000 -889000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path TOP 25400  762000 -889000 762000 -508000)
+    (connect (terminal wire) (terminal pin LCD1-0))
+   )
+   (wire (path TOP 25400  1778000 -762000 1778000 -508000)
+    (connect (terminal wire) (terminal pin LCD1-4))
+   )
+   (wire (path TOP 25400  1905000 -762000 1778000 -762000)
+    (connect (terminal pin FP-0) (terminal wire))
+   )
+   (wire (path BOT 25400  1905000 -1016000 1905000 -1270000)
+    (connect (terminal pin R2-0) (terminal pin RF-0))
+    (attr bus)
+   )
+   (wire (path BOT 25400  1905000 -762000 1905000 -1016000)
+    (connect (terminal pin FP-0) (terminal pin R2-0))
+    (attr bus)
+   )
+   )
+  )
+ )
